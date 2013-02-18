@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/sparksco/android/arm-eabi/x86_64-pc-linux-gnu/arm-eabi/lib'
+libdir='/tmp/arm-eabi/x86_64-pc-linux-gnu/arm-eabi/lib'

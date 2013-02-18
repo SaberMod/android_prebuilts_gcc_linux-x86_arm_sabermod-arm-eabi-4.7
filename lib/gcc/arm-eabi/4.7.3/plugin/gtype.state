@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "4.7.3 20130218 (prerelease)")
+(!version  "4.7.3 20130405 (prerelease)")
 
 (!srcdir  "../.././../gcc/gcc-SaberMod/gcc")
 
@@ -11448,124 +11448,124 @@ nil )
 (!type struct 485 
 (!type already_seen 484)
  gc_maybe_pointed_to "machine_function"
-(!srcfileloc  "config/arm/arm.h" 1417)
+(!srcfileloc  "config/arm/arm.h" 1424)
 
 (!fields 15 
 (!pair  "eh_epilogue_sp_ofs"
 (!type already_seen 156)
 
-(!srcfileloc  "config/arm/arm.h" 1385)
+(!srcfileloc  "config/arm/arm.h" 1392)
 nil )
 (!pair  "far_jump_used"
 (!type already_seen 11)
 
-(!srcfileloc  "config/arm/arm.h" 1387)
+(!srcfileloc  "config/arm/arm.h" 1394)
 nil )
 (!pair  "arg_pointer_live"
 (!type already_seen 11)
 
-(!srcfileloc  "config/arm/arm.h" 1389)
+(!srcfileloc  "config/arm/arm.h" 1396)
 nil )
 (!pair  "lr_save_eliminated"
 (!type already_seen 11)
 
-(!srcfileloc  "config/arm/arm.h" 1391)
+(!srcfileloc  "config/arm/arm.h" 1398)
 nil )
 (!pair  "stack_offsets"
 (!type struct 486 nil  gc_used "arm_stack_offsets"
-(!srcfileloc  "config/arm/arm.h" 1376)
+(!srcfileloc  "config/arm/arm.h" 1383)
 
 (!fields 7 
 (!pair  "saved_args"
 (!type already_seen 11)
 
-(!srcfileloc  "config/arm/arm.h" 1369)
+(!srcfileloc  "config/arm/arm.h" 1376)
 nil )
 (!pair  "frame"
 (!type already_seen 11)
 
-(!srcfileloc  "config/arm/arm.h" 1370)
+(!srcfileloc  "config/arm/arm.h" 1377)
 nil )
 (!pair  "saved_regs"
 (!type already_seen 11)
 
-(!srcfileloc  "config/arm/arm.h" 1371)
+(!srcfileloc  "config/arm/arm.h" 1378)
 nil )
 (!pair  "soft_frame"
 (!type already_seen 11)
 
-(!srcfileloc  "config/arm/arm.h" 1372)
+(!srcfileloc  "config/arm/arm.h" 1379)
 nil )
 (!pair  "locals_base"
 (!type already_seen 11)
 
-(!srcfileloc  "config/arm/arm.h" 1373)
+(!srcfileloc  "config/arm/arm.h" 1380)
 nil )
 (!pair  "outgoing_args"
 (!type already_seen 11)
 
-(!srcfileloc  "config/arm/arm.h" 1374)
+(!srcfileloc  "config/arm/arm.h" 1381)
 nil )
 (!pair  "saved_regs_mask"
 (!type already_seen 11)
 
-(!srcfileloc  "config/arm/arm.h" 1375)
+(!srcfileloc  "config/arm/arm.h" 1382)
 nil ))
 nil 511 nil )
 
-(!srcfileloc  "config/arm/arm.h" 1393)
+(!srcfileloc  "config/arm/arm.h" 1400)
 nil )
 (!pair  "func_type"
 (!type already_seen 11)
 
-(!srcfileloc  "config/arm/arm.h" 1395)
+(!srcfileloc  "config/arm/arm.h" 1402)
 nil )
 (!pair  "uses_anonymous_args"
 (!type already_seen 11)
 
-(!srcfileloc  "config/arm/arm.h" 1397)
+(!srcfileloc  "config/arm/arm.h" 1404)
 nil )
 (!pair  "sibcall_blocked"
 (!type already_seen 11)
 
-(!srcfileloc  "config/arm/arm.h" 1400)
+(!srcfileloc  "config/arm/arm.h" 1407)
 nil )
 (!pair  "pic_reg"
 (!type already_seen 156)
 
-(!srcfileloc  "config/arm/arm.h" 1402)
+(!srcfileloc  "config/arm/arm.h" 1409)
 nil )
 (!pair  "call_via"
 (!type array 487 nil  gc_used "14" 
 (!type already_seen 156)
 )
 
-(!srcfileloc  "config/arm/arm.h" 1406)
+(!srcfileloc  "config/arm/arm.h" 1413)
 nil )
 (!pair  "return_used_this_function"
 (!type already_seen 11)
 
-(!srcfileloc  "config/arm/arm.h" 1409)
+(!srcfileloc  "config/arm/arm.h" 1416)
 nil )
 (!pair  "thumb1_cc_insn"
 (!type already_seen 156)
 
-(!srcfileloc  "config/arm/arm.h" 1412)
+(!srcfileloc  "config/arm/arm.h" 1419)
 nil )
 (!pair  "thumb1_cc_op0"
 (!type already_seen 156)
 
-(!srcfileloc  "config/arm/arm.h" 1413)
+(!srcfileloc  "config/arm/arm.h" 1420)
 nil )
 (!pair  "thumb1_cc_op1"
 (!type already_seen 156)
 
-(!srcfileloc  "config/arm/arm.h" 1414)
+(!srcfileloc  "config/arm/arm.h" 1421)
 nil )
 (!pair  "thumb1_cc_mode"
 (!type already_seen 11)
 
-(!srcfileloc  "config/arm/arm.h" 1416)
+(!srcfileloc  "config/arm/arm.h" 1423)
 nil ))
 nil 511 nil )
 )
@@ -18750,39 +18750,39 @@ nil ))
 (!type already_seen 819)
 )
  gc_pointed_to "VEC_tree_int_gc"
-(!srcfileloc  "cp/parser.c" 7999)
+(!srcfileloc  "cp/parser.c" 8005)
 
 (!fields 1 
 (!pair  "base"
 (!type struct 821 nil  gc_used "VEC_tree_int_base"
-(!srcfileloc  "cp/parser.c" 7998)
+(!srcfileloc  "cp/parser.c" 8004)
 
 (!fields 2 
 (!pair  "prefix"
 (!type already_seen 56)
 
-(!srcfileloc  "cp/parser.c" 7998)
+(!srcfileloc  "cp/parser.c" 8004)
 nil )
 (!pair  "vec"
 (!type array 822 nil  gc_used "1" 
 (!type struct 823 nil  gc_used "tree_int"
-(!srcfileloc  "cp/parser.c" 7997)
+(!srcfileloc  "cp/parser.c" 8003)
 
 (!fields 2 
 (!pair  "t"
 (!type already_seen 26)
 
-(!srcfileloc  "cp/parser.c" 7995)
+(!srcfileloc  "cp/parser.c" 8001)
 nil )
 (!pair  "i"
 (!type already_seen 11)
 
-(!srcfileloc  "cp/parser.c" 7996)
+(!srcfileloc  "cp/parser.c" 8002)
 nil ))
 nil 130 nil )
 )
 
-(!srcfileloc  "cp/parser.c" 7998)
+(!srcfileloc  "cp/parser.c" 8004)
 
 (!options 
 (!option length string  "%h.prefix.num")
@@ -18790,18 +18790,18 @@ nil 130 nil )
 ))
 nil 130 nil )
 
-(!srcfileloc  "cp/parser.c" 7999)
+(!srcfileloc  "cp/parser.c" 8005)
 nil ))
 nil 130 nil )
 
 (!type struct 824 nil  gc_unused "VEC_tree_int_none"
-(!srcfileloc  "cp/parser.c" 7998)
+(!srcfileloc  "cp/parser.c" 8004)
 
 (!fields 1 
 (!pair  "base"
 (!type already_seen 821)
 
-(!srcfileloc  "cp/parser.c" 7998)
+(!srcfileloc  "cp/parser.c" 8004)
 nil ))
 nil 130 nil )
 
@@ -19395,7 +19395,7 @@ nil 0 nil )
 (!type already_seen 867)
 )
  gc_pointed_to "constexpr_call"
-(!srcfileloc  "cp/semantics.c" 6271)
+(!srcfileloc  "cp/semantics.c" 6269)
 
 (!fields 4 
 (!pair  "fundef"
@@ -19403,38 +19403,38 @@ nil 0 nil )
 (!type struct 870 
 (!type already_seen 869)
  gc_pointed_to "constexpr_fundef"
-(!srcfileloc  "cp/semantics.c" 5673)
+(!srcfileloc  "cp/semantics.c" 5671)
 
 (!fields 2 
 (!pair  "decl"
 (!type already_seen 26)
 
-(!srcfileloc  "cp/semantics.c" 5671)
+(!srcfileloc  "cp/semantics.c" 5669)
 nil )
 (!pair  "body"
 (!type already_seen 26)
 
-(!srcfileloc  "cp/semantics.c" 5672)
+(!srcfileloc  "cp/semantics.c" 5670)
 nil ))
 nil 130 nil )
 )
 
-(!srcfileloc  "cp/semantics.c" 6255)
+(!srcfileloc  "cp/semantics.c" 6253)
 nil )
 (!pair  "bindings"
 (!type already_seen 26)
 
-(!srcfileloc  "cp/semantics.c" 6262)
+(!srcfileloc  "cp/semantics.c" 6260)
 nil )
 (!pair  "result"
 (!type already_seen 26)
 
-(!srcfileloc  "cp/semantics.c" 6267)
+(!srcfileloc  "cp/semantics.c" 6265)
 nil )
 (!pair  "hash"
 (!type already_seen 11)
 
-(!srcfileloc  "cp/semantics.c" 6270)
+(!srcfileloc  "cp/semantics.c" 6268)
 nil ))
 nil 130 nil )
 
@@ -23357,7 +23357,7 @@ nil 0 nil )
 (!fields 0 )
 nil 0 nil )
 
-(!type struct 1203 nil  gc_unused "anonymous:../.././../gcc/gcc-SaberMod/gcc/config/arm/arm.c:24449"nil 
+(!type struct 1203 nil  gc_unused "anonymous:../.././../gcc/gcc-SaberMod/gcc/config/arm/arm.c:24459"nil 
 (!fields 0 )
 nil 0 nil )
 
@@ -23365,7 +23365,7 @@ nil 0 nil )
 (!fields 0 )
 nil 0 nil )
 
-(!type struct 1205 nil  gc_unused "anonymous:../.././../gcc/gcc-SaberMod/gcc/config/arm/arm.c:19034"nil 
+(!type struct 1205 nil  gc_unused "anonymous:../.././../gcc/gcc-SaberMod/gcc/config/arm/arm.c:19044"nil 
 (!fields 0 )
 nil 0 nil )
 
@@ -28446,7 +28446,7 @@ nil 0 nil )
 
 (!type already_seen 60)
 
-(!type struct 1678 nil  gc_unused "anonymous:../.././../gcc/gcc-SaberMod/gcc/config/arm/arm.h:1448"nil 
+(!type struct 1678 nil  gc_unused "anonymous:../.././../gcc/gcc-SaberMod/gcc/config/arm/arm.h:1455"nil 
 (!fields 0 )
 nil 0 nil )
 
@@ -29754,22 +29754,22 @@ nil )
 (!pair  "VEC_tree_int_gc"
 (!type already_seen 819)
 
-(!srcfileloc  "cp/parser.c" 7999)
+(!srcfileloc  "cp/parser.c" 8005)
 nil )
 (!pair  "VEC_tree_int_none"
 (!type already_seen 824)
 
-(!srcfileloc  "cp/parser.c" 7998)
+(!srcfileloc  "cp/parser.c" 8004)
 nil )
 (!pair  "VEC_tree_int_base"
 (!type already_seen 821)
 
-(!srcfileloc  "cp/parser.c" 7998)
+(!srcfileloc  "cp/parser.c" 8004)
 nil )
 (!pair  "tree_int"
 (!type already_seen 823)
 
-(!srcfileloc  "cp/parser.c" 7997)
+(!srcfileloc  "cp/parser.c" 8003)
 nil )
 (!pair  "cp_parser_expression_stack"
 (!type array 1736 nil  gc_unused "NUM_PREC_VALUES" 
@@ -29971,12 +29971,12 @@ nil )
 (!pair  "constexpr_call"
 (!type already_seen 867)
 
-(!srcfileloc  "cp/semantics.c" 6271)
+(!srcfileloc  "cp/semantics.c" 6269)
 nil )
 (!pair  "constexpr_fundef"
 (!type already_seen 870)
 
-(!srcfileloc  "cp/semantics.c" 5673)
+(!srcfileloc  "cp/semantics.c" 5671)
 nil )
 (!pair  "VEC_deferred_access_gc"
 (!type already_seen 871)
@@ -30981,27 +30981,27 @@ nil )
 (!pair  "arm_mangle_map_entry"
 (!type already_seen 1203)
 
-(!srcfileloc  "config/arm/arm.c" 24453)
+(!srcfileloc  "config/arm/arm.c" 24463)
 nil )
 (!pair  "builtin_arg"
 (!type already_seen 11)
 
-(!srcfileloc  "config/arm/arm.c" 20601)
+(!srcfileloc  "config/arm/arm.c" 20611)
 nil )
 (!pair  "neon_builtin_datum"
 (!type already_seen 1205)
 
-(!srcfileloc  "config/arm/arm.c" 19040)
+(!srcfileloc  "config/arm/arm.c" 19050)
 nil )
 (!pair  "neon_itype"
 (!type already_seen 11)
 
-(!srcfileloc  "config/arm/arm.c" 19032)
+(!srcfileloc  "config/arm/arm.c" 19042)
 nil )
 (!pair  "neon_builtin_type_mode"
 (!type already_seen 11)
 
-(!srcfileloc  "config/arm/arm.c" 18967)
+(!srcfileloc  "config/arm/arm.c" 18977)
 nil )
 (!pair  "arm_pragma_enum"
 (!type already_seen 11)
@@ -32741,12 +32741,12 @@ nil )
 (!pair  "machine_function"
 (!type already_seen 485)
 
-(!srcfileloc  "config/arm/arm.h" 1418)
+(!srcfileloc  "config/arm/arm.h" 1425)
 nil )
 (!pair  "arm_stack_offsets"
 (!type already_seen 486)
 
-(!srcfileloc  "config/arm/arm.h" 1377)
+(!srcfileloc  "config/arm/arm.h" 1384)
 nil )
 (!pair  "arm_cc"
 (!type already_seen 11)
@@ -34933,22 +34933,22 @@ nil )
 (!pair  "the_parser"
 (!type already_seen 828)
 
-(!srcfileloc  "cp/parser.c" 27216)
+(!srcfileloc  "cp/parser.c" 27231)
 nil )
 (!pair  "lambda_scope_stack"
 (!type already_seen 820)
 
-(!srcfileloc  "cp/parser.c" 8000)
+(!srcfileloc  "cp/parser.c" 8006)
 nil )
 (!pair  "lambda_count"
 (!type already_seen 11)
 
-(!srcfileloc  "cp/parser.c" 7992)
+(!srcfileloc  "cp/parser.c" 7998)
 nil )
 (!pair  "lambda_scope"
 (!type already_seen 26)
 
-(!srcfileloc  "cp/parser.c" 7991)
+(!srcfileloc  "cp/parser.c" 7997)
 nil )
 (!pair  "cp_parser_context_free_list"
 (!type already_seen 839)
@@ -34962,7 +34962,7 @@ nil )
 (!pair  "list_hash_table"
 (!type already_seen 64)
 
-(!srcfileloc  "cp/tree.c" 1515)
+(!srcfileloc  "cp/tree.c" 1547)
 
 (!options 
 (!option param_is type 
@@ -34984,7 +34984,7 @@ nil )
 (!pair  "constexpr_call_table"
 (!type already_seen 1747)
 
-(!srcfileloc  "cp/semantics.c" 6276)
+(!srcfileloc  "cp/semantics.c" 6274)
 
 (!options 
 (!option param_is type 
@@ -34995,7 +34995,7 @@ nil )
 (!pair  "constexpr_fundef_table"
 (!type already_seen 1749)
 
-(!srcfileloc  "cp/semantics.c" 5678)
+(!srcfileloc  "cp/semantics.c" 5676)
 
 (!options 
 (!option param_is type 
@@ -35021,7 +35021,7 @@ nil )
 (!pair  "last_error_tinst_level"
 (!type already_seen 884)
 
-(!srcfileloc  "cp/pt.c" 7758)
+(!srcfileloc  "cp/pt.c" 7760)
 nil )
 (!pair  "canonical_template_parms"
 (!type already_seen 53)
@@ -35577,7 +35577,7 @@ nil )
 (!type already_seen 26)
 )
 
-(!srcfileloc  "config/arm/arm.c" 19452)
+(!srcfileloc  "config/arm/arm.c" 19462)
 nil )
 (!pair  "tls_get_addr_libfunc"
 (!type already_seen 156)
@@ -35607,7 +35607,7 @@ nil )
 (!pair  "critical_name_mutexes"
 (!type already_seen 1755)
 
-(!srcfileloc  "omp-low.c" 6153)
+(!srcfileloc  "omp-low.c" 6160)
 
 (!options 
 (!option param2_is type 
@@ -35622,7 +35622,7 @@ nil )
 (!pair  "tmp_ompfn_id_num"
 (!type already_seen 11)
 
-(!srcfileloc  "omp-low.c" 1546)
+(!srcfileloc  "omp-low.c" 1553)
 nil )
 (!pair  "parallelized_functions"
 (!type already_seen 139)
@@ -37291,7 +37291,7 @@ nil )
 (!type already_seen 156)
 )
 
-(!srcfileloc  "config/arm/arm.h" 1423)
+(!srcfileloc  "config/arm/arm.h" 1430)
 nil )
 (!pair  "arm_target_insn"
 (!type already_seen 156)
