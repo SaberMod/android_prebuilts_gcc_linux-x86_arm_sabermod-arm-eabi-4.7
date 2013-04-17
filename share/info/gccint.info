@@ -61,7 +61,7 @@ Introduction
 This manual documents the internals of the GNU compilers, including how
 to port them to new targets and some information about how to write
 front ends for new languages.  It corresponds to the compilers
-(SM-Toolchain) version 4.7.3.  The use of the GNU compilers is
+(SM-Toolchain) version 4.7.4.  The use of the GNU compilers is
 documented in a separate manual.  *Note Introduction: (gcc)Top.
 
  This manual is mainly a reference manual rather than a tutorial.  It
@@ -35123,6 +35123,11 @@ Here are macros for SDB and DWARF output.
      should be emitted.  These sections are not used on most platforms,
      and in particular GDB does not use them.
 
+ -- Target Hook: bool TARGET_FORCE_AT_COMP_DIR
+     True if the `DW_AT_comp_dir' attribute should be emitted for each
+     compilation unit.  This attribute is required for the darwin
+     linker  to emit debug information.
+
  -- Target Hook: bool TARGET_DELAY_SCHED2
      True if sched2 is not to be run at its normal place.  This usually
      means it will be run as part of machine-specific reorg.
@@ -44771,11 +44776,11 @@ Concept Index
 * ASM_OUTPUT_DEBUG_LABEL:                Label Output.       (line  355)
 * ASM_OUTPUT_DEF:                        Label Output.       (line  404)
 * ASM_OUTPUT_DEF_FROM_DECLS:             Label Output.       (line  412)
-* ASM_OUTPUT_DWARF_DELTA:                SDB and DWARF.      (line   69)
-* ASM_OUTPUT_DWARF_OFFSET:               SDB and DWARF.      (line   78)
-* ASM_OUTPUT_DWARF_PCREL:                SDB and DWARF.      (line   84)
-* ASM_OUTPUT_DWARF_TABLE_REF:            SDB and DWARF.      (line   89)
-* ASM_OUTPUT_DWARF_VMS_DELTA:            SDB and DWARF.      (line   73)
+* ASM_OUTPUT_DWARF_DELTA:                SDB and DWARF.      (line   74)
+* ASM_OUTPUT_DWARF_OFFSET:               SDB and DWARF.      (line   83)
+* ASM_OUTPUT_DWARF_PCREL:                SDB and DWARF.      (line   89)
+* ASM_OUTPUT_DWARF_TABLE_REF:            SDB and DWARF.      (line   94)
+* ASM_OUTPUT_DWARF_VMS_DELTA:            SDB and DWARF.      (line   78)
 * ASM_OUTPUT_EXTERNAL:                   Label Output.       (line  284)
 * ASM_OUTPUT_FDESC:                      Data Output.        (line   60)
 * ASM_OUTPUT_FUNCTION_LABEL:             Label Output.       (line   17)
@@ -47026,7 +47031,7 @@ Concept Index
 * PUT_CODE:                              RTL Objects.        (line   47)
 * PUT_MODE:                              Machine Modes.      (line  283)
 * PUT_REG_NOTE_KIND:                     Insns.              (line  351)
-* PUT_SDB_:                              SDB and DWARF.      (line  101)
+* PUT_SDB_:                              SDB and DWARF.      (line  106)
 * QCmode:                                Machine Modes.      (line  197)
 * QFmode:                                Machine Modes.      (line   54)
 * QImode:                                Machine Modes.      (line   25)
@@ -47297,11 +47302,11 @@ Concept Index
 * scratch_operand:                       Machine-Independent Predicates.
                                                              (line   50)
 * SDATA_SECTION_ASM_OP:                  Sections.           (line   58)
-* SDB_ALLOW_FORWARD_REFERENCES:          SDB and DWARF.      (line  119)
-* SDB_ALLOW_UNKNOWN_REFERENCES:          SDB and DWARF.      (line  114)
+* SDB_ALLOW_FORWARD_REFERENCES:          SDB and DWARF.      (line  124)
+* SDB_ALLOW_UNKNOWN_REFERENCES:          SDB and DWARF.      (line  119)
 * SDB_DEBUGGING_INFO:                    SDB and DWARF.      (line    9)
-* SDB_DELIM:                             SDB and DWARF.      (line  107)
-* SDB_OUTPUT_SOURCE_LINE:                SDB and DWARF.      (line  124)
+* SDB_DELIM:                             SDB and DWARF.      (line  112)
+* SDB_OUTPUT_SOURCE_LINE:                SDB and DWARF.      (line  129)
 * SDmode:                                Machine Modes.      (line   85)
 * sdot_prodM instruction pattern:        Standard Names.     (line  338)
 * search options:                        Including Patterns. (line   44)
@@ -47640,7 +47645,7 @@ Concept Index
 * TARGET_ASM_OPEN_PAREN:                 Data Output.        (line  130)
 * TARGET_ASM_OUTPUT_ADDR_CONST_EXTRA:    Data Output.        (line   40)
 * TARGET_ASM_OUTPUT_ANCHOR:              Anchored Addresses. (line   44)
-* TARGET_ASM_OUTPUT_DWARF_DTPREL:        SDB and DWARF.      (line   96)
+* TARGET_ASM_OUTPUT_DWARF_DTPREL:        SDB and DWARF.      (line  101)
 * TARGET_ASM_OUTPUT_MI_THUNK:            Function Entry.     (line  195)
 * TARGET_ASM_OUTPUT_SOURCE_FILENAME:     File Framework.     (line   94)
 * TARGET_ASM_RECORD_GCC_SWITCHES:        File Framework.     (line  164)
@@ -47711,8 +47716,8 @@ Concept Index
 * TARGET_DEFAULT_SHORT_ENUMS:            Type Layout.        (line  167)
 * TARGET_DEFAULT_TARGET_FLAGS:           Run-time Target.    (line   56)
 * TARGET_DEFERRED_OUTPUT_DEFS:           Label Output.       (line  422)
-* TARGET_DELAY_SCHED2:                   SDB and DWARF.      (line   61)
-* TARGET_DELAY_VARTRACK:                 SDB and DWARF.      (line   65)
+* TARGET_DELAY_SCHED2:                   SDB and DWARF.      (line   66)
+* TARGET_DELAY_VARTRACK:                 SDB and DWARF.      (line   70)
 * TARGET_DELEGITIMIZE_ADDRESS:           Addressing Modes.   (line  238)
 * TARGET_DLLIMPORT_DECL_ATTRIBUTES:      Target Attributes.  (line   55)
 * TARGET_DWARF_CALLING_CONVENTION:       SDB and DWARF.      (line   18)
@@ -47754,6 +47759,7 @@ Concept Index
 * TARGET_FLT_EVAL_METHOD:                Type Layout.        (line  148)
 * TARGET_FN_ABI_VA_LIST:                 Register Arguments. (line  289)
 * TARGET_FOLD_BUILTIN:                   Misc.               (line  650)
+* TARGET_FORCE_AT_COMP_DIR:              SDB and DWARF.      (line   61)
 * TARGET_FORMAT_TYPES:                   Misc.               (line  850)
 * TARGET_FRAME_POINTER_REQUIRED:         Elimination.        (line    9)
 * TARGET_FUNCTION_ARG:                   Register Arguments. (line   12)
@@ -48725,40 +48731,40 @@ Node: DBX Options1517508
 Node: DBX Hooks1522957
 Node: File Names and DBX1524883
 Node: SDB and DWARF1526995
-Node: VMS Debug1532842
-Node: Floating Point1533429
-Node: Mode Switching1538252
-Node: Target Attributes1542178
-Node: Emulated TLS1550090
-Node: MIPS Coprocessors1553480
-Node: PCH Target1555049
-Node: C++ ABI1556891
-Node: Named Address Spaces1561683
-Node: Misc1566622
-Ref: TARGET_SHIFT_TRUNCATION_MASK1574050
-Node: Host Config1617172
-Node: Host Common1618240
-Node: Filesystem1620619
-Node: Host Misc1624734
-Node: Fragments1627183
-Node: Target Fragment1628378
-Node: Host Fragment1636328
-Node: Collect21636568
-Node: Header Dirs1639204
-Node: Type Information1640627
-Node: GTY Options1642984
-Node: GGC Roots1656812
-Node: Files1657532
-Node: Invoking the garbage collector1660278
-Node: Troubleshooting1661781
-Node: Plugins1662857
-Node: LTO1679735
-Node: Funding1704781
-Node: GNU Project1707264
-Node: Copying1707913
-Node: GNU Free Documentation License1745444
-Node: Contributors1770584
-Node: Option Index1807989
-Node: Concept Index1808793
+Node: VMS Debug1533067
+Node: Floating Point1533654
+Node: Mode Switching1538477
+Node: Target Attributes1542403
+Node: Emulated TLS1550315
+Node: MIPS Coprocessors1553705
+Node: PCH Target1555274
+Node: C++ ABI1557116
+Node: Named Address Spaces1561908
+Node: Misc1566847
+Ref: TARGET_SHIFT_TRUNCATION_MASK1574275
+Node: Host Config1617397
+Node: Host Common1618465
+Node: Filesystem1620844
+Node: Host Misc1624959
+Node: Fragments1627408
+Node: Target Fragment1628603
+Node: Host Fragment1636553
+Node: Collect21636793
+Node: Header Dirs1639429
+Node: Type Information1640852
+Node: GTY Options1643209
+Node: GGC Roots1657037
+Node: Files1657757
+Node: Invoking the garbage collector1660503
+Node: Troubleshooting1662006
+Node: Plugins1663082
+Node: LTO1679960
+Node: Funding1705006
+Node: GNU Project1707489
+Node: Copying1708138
+Node: GNU Free Documentation License1745669
+Node: Contributors1770809
+Node: Option Index1808214
+Node: Concept Index1809018
 
 End Tag Table
