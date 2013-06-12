@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "4.7.4 20130525 (prerelease)")
+(!version  "4.7.4 20130612 (prerelease)")
 
 (!srcdir  "../.././../gcc/gcc-SaberMod/gcc")
 
@@ -35386,12 +35386,12 @@ nil )
 (!pair  "gnat_vms_condition_handler_decl"
 (!type already_seen 26)
 
-(!srcfileloc  "ada/gcc-interface/trans.c" 2619)
+(!srcfileloc  "ada/gcc-interface/trans.c" 2624)
 nil )
 (!pair  "vms_builtin_establish_handler_decl"
 (!type already_seen 26)
 
-(!srcfileloc  "ada/gcc-interface/trans.c" 2618)
+(!srcfileloc  "ada/gcc-interface/trans.c" 2623)
 nil )
 (!pair  "gnu_program_error_label_stack"
 (!type already_seen 53)
